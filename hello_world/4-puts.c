@@ -1,8 +1,16 @@
+/**
+ * 4-puts.c
+ */
 #include <stdio.h>
 int main(void)
-/*
-* Prints exactly "Programming is like building a multilingual puzzle
-*/
+/**
+ * main() - this is the declaration of the program's,
+ *           main function.
+ * @void:   The void type indicates that there are no arguments,
+ *          in this function.
+ *
+ * Return: Always 0.
+ */
 {
 	puts("\"Programming is like building a multilingual puzzle");
 
