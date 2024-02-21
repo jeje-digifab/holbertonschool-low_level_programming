@@ -9,23 +9,13 @@ int main(void)
 
 {
 	char ch;
-	char maj;
 
-
-	for (ch = 'a' ; ch <= 'd' ; ch++)
+	for (ch = 'a' ; ch <= 'z' ; ch++)
 	{
-	putchar(ch);
+	if (ch !='e' && ch != 'q')
+		putchar(ch);
 	}
 
-	for (maj = 'f' ; maj <= 'p' ; maj++)
-	{
-	putchar(maj);
-	}
-
-	for (maj = 'r' ; maj <= 'z' ; maj++)
-	{
-	putchar(maj);
-	}
 
 	putchar('\n');
 
