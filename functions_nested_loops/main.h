@@ -1,3 +1,1 @@
-#include <stdio.h>
-
-void _putchar();
+int _putchar(char c);
