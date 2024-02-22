@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
 * main - Entry point
 * Return: Always 0 (Success)
@@ -7,11 +8,6 @@
 int main(void)
 
 {
-	char putchar;
-
-	_putchar("_putchar");
-
-	_putchar("\n");
-
+	_putchar('e');
 	return (0);
 }
