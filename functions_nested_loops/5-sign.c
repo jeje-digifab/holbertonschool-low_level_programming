@@ -3,10 +3,10 @@
 
 /**
  * print_sign - entry point.
- * @c: fonction putchar.
- * Return: and prints + if n is greater than zero
- *			0 and prints 0 if n is zero
- *			-1 and prints - if n is less than zero
+ * @n: variable test.
+ * Return: prints + if n is greater than zero.
+ *			0 and prints 0 if n is zero.
+ *			-1 and prints - if n is less than zero.
  */
 
 int print_sign(int n)
@@ -22,7 +22,7 @@ int print_sign(int n)
 	else if (n == 0)
 	{
 	_putchar(48);
-		return (0);
+	return (0);
 	}
 
 	else
