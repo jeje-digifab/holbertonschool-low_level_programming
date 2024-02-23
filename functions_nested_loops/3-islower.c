@@ -5,7 +5,7 @@
  * _islower - entry point.
  * @c: fonction putchar.
  * Return: 0 is Upper.
- * Return: 1 is Lower.
+ * 			1 is Lower.
  */
 
 int _islower(int c)

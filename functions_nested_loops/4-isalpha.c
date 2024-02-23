@@ -4,8 +4,8 @@
 /**
  * _isalpha - entry point.
  * @c: fonction putchar.
- * Return: 0 is Upper.
- * Return: 1 is Lower.
+ * Return: 0 otherwise.
+ *			1 is a letter, lowercase or uppercase.
  */
 
 int _isalpha(int c)
