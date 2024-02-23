@@ -2,8 +2,8 @@
 #include <unistd.h>
 
 /**
- * int _islower(int c) - entry point.
- * @c: fonction putchar
+ * _islower - entry point.
+ * @c: fonction putchar.
  * Return: 0.
  */
 
