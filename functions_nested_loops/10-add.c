@@ -4,7 +4,7 @@
 /**
  * add - entry point.
  * @n1: value of numbber 1
- * @n1: value of numbber 2
+ * @n2: value of numbber 2
  * Return: print value absolue of number
  *			print 0 if r is zero.
  */
