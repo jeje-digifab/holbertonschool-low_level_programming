@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_line - Entry point.
+* print_square - Entry point.
 * @size : is the number of times the character _ should be printed
 * Return: If size is 0 or less, the function should
  *			print only a new line.
