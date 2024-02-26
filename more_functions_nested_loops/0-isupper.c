@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
-* _isupper - Entry point
-* Return: Returns 1 if c is uppercase
-* 		Returns 0 otherwise
+* _isupper - Entry point.
+* @c: variable.
+* Return: Returns 1 if c is uppercase.
+*		Returns 0 otherwise.
 */
 
 int _isupper(int c)
@@ -17,7 +18,7 @@ int _isupper(int c)
 
 	else
 	{
-		return(0);
+		return (0);
 	}
 
 }
