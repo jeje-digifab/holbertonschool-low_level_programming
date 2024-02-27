@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strlen - Entry point.
  * @s: variable.
@@ -18,5 +17,6 @@ int _strlen(char *s)
 	{
 		a++;
 	}
- return (a);
+
+	return (a);
 }
