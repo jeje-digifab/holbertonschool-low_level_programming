@@ -22,23 +22,46 @@ int main(void)
 			if (i % 15 == 0 || i % 5 == 0 || i % 3 == 0)
 			{
 
-				if (i % 15 == 0)
+				if (i <= 99)
 				{
-					printf("FizzBuzz");
-					putchar(' ');
+
+					if (i % 15 == 0)
+					{
+						printf("FizzBuzz");
+						putchar(' ');
+					}
+
+					else if (i % 5 == 0)
+					{
+
+						printf("Buzz");
+						putchar(' ');
+					}
+
+					else if (i % 3 == 0)
+					{
+						printf("Fizz");
+						putchar(' ');
+					}
 				}
 
-				else if (i % 5 == 0)
+				else
 				{
+					if (i % 15 == 0)
+					{
+						printf("FizzBuzz");
+					}
 
-					printf("Buzz");
-					putchar(' ');
-				}
+					else if (i % 5 == 0)
+					{
 
-				else if (i % 3 == 0)
-				{
-					printf("Fizz");
-					putchar(' ');
+						printf("Buzz");
+					}
+
+					else if (i % 3 == 0)
+					{
+						printf("Fizz");
+					}
 				}
 			}
 
