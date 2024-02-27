@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* print_most_numbers - Entry point.
-* Return: Returns number.
-*/
+ * print_most_numbers - Entry point.
+ * Return: Returns number.
+ */
 
 void print_most_numbers(void)
 
