@@ -3,8 +3,10 @@
 
 
 /**
-* more_numbers - Entry point.
-* Return: Prints 10 times the numbers, from 0 to 14.
+* main - Entry point.
+* Return: But for multiples of three print Fizz instead of the number and for
+*	the multiples of five print Buzz. For numbers which are multiples of both
+*	three and five print FizzBuzz.
 */
 
 int main(void)
@@ -38,18 +40,18 @@ int main(void)
 
 			if (i % 15 == 0)
 			{
-				printf("FizzBuzz");
+				printf("FizzBuzz ");
 			}
 
 			else if (i % 5 == 0)
 			{
 
-				printf("Buzz");
+				printf("Buzz ");
 			}
 
 			else if (i % 3 == 0)
 			{
-				printf("Fizz");
+				printf("Fizz ");
 			}
 
 		}
