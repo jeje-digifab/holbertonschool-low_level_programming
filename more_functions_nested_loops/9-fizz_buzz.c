@@ -53,27 +53,15 @@ int main(void)
 			}
 			else
 			{
-				if (i <= 9)
-				{
-					putchar(i + '0');
-					putchar(' ');
-				}
-
-				else if (i > 9 && i < 100)
+				if (i > 9)
 				{
 					putchar((i / 10) + '0');
-					putchar((i % 10) + '0');
-					putchar(' ');
 				}
 
-				else
-				{
-					putchar((i / 100) + '0');
-					putchar((i % 10) + '0');
-					putchar((i % 10) + '0');
-				}
-
+				putchar((i % 10) + '0');
+				putchar(' ');
 			}
+
 		}
 		putchar('\n');
 		return (0);
