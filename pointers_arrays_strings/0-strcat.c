@@ -27,14 +27,14 @@ char *_strcat(char *dest, char *src)
 
 
 /*
-	while (src[i] != '\0')
-	{
-		dest[length ] = src[i];
-		length++;
-		i++;
-	}
-
-*/
+ *	while (src[i] != '\0')
+ *	{
+ *		dest[length ] = src[i];
+ *		length++;
+ *		i++;
+ *	}
+ *
+ */
 
 	dest[length + i] = '\0';
 
