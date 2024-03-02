@@ -3,10 +3,10 @@
 
 /**
  * _strncat - concatenates two strings with a
- *				specified number of bytes from src
+ *				specified number of bytes from src.
  * @dest: pointer to the destination string
- * @src: pointer to the source string
- * @n: maximum number of bytes from src to be used in the concatenation
+ * @src: pointer to the source string.
+ * @n: maximum number of bytes from src to be used in the concatenation.
  *
  * Return: a pointer to the resulting string dest.
  */
