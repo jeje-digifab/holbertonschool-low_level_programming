@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-
 
 /**
  * _strcmp - function that compares two strings s1 and s2.
@@ -14,7 +12,6 @@
 int _strcmp(char *s1, char *s2)
 
 {
-
 
 	int lengths1, lengths2;
 
@@ -34,7 +31,7 @@ int _strcmp(char *s1, char *s2)
 
 	if (*(s1) > *(s2))
 	{
-		return (1);
+		return (15);
 	}
 
 	else if (*(s1) == *(s2))
@@ -44,8 +41,7 @@ int _strcmp(char *s1, char *s2)
 
 	else
 	{
-		return (-1);
+		return (-15);
 	}
-
 
 }
