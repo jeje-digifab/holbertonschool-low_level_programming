@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * _strcmp - function that compares two strings s1 and s2.
  * @s1: first strings.
@@ -12,30 +12,11 @@
 int _strcmp(char *s1, char *s2)
 
 {
-
-	int lengths1, lengths2;
-
-	lengths1 = 0;
-	lengths2 = 0;
-
-	while (s1[lengths1] != '\0')
-	{
-		lengths1++;
-	}
-
-	while (s2[lengths2] != '\0')
-	{
-		lengths2++;
-	}
-
-	if (s1 == s2)
-	{
-		return (0);
-	}
-
-	else
-	{
-		return (*s1 - *s2);
-	}
+    while ((*s1 != '\0') && (*s2 != '\0') && (*s1 == *s2))
+    {
+        s1++;
+        s2++;
+    }
+    return (*s1 < *s2) ? (*s1 - *s2) : (*s2 - *s1);
 }
 
