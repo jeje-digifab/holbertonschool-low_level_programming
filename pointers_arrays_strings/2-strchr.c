@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * _strchr - Entry point.
  * @s: string.
@@ -23,5 +23,5 @@ char *_strchr(char *s, char c)
 		}
 		len++;
 	}
-	return (NULL);
+	return (0);
 }
