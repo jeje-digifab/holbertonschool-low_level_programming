@@ -2,7 +2,7 @@
 
 /**
  * _strlen_recursion - Entry point.
- * @s: pointeur la phrase à copier.
+ * @s: pointer to the phrase to be counted.
  * Return: function that returns the length of a string.
  */
 
