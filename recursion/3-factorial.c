@@ -11,9 +11,18 @@
 int factorial(int n)
 
 {
+	int n2;
+
+	n2 = 0;
+
 	if (n > 0)
 	{
-		return(n);
+		if (n2 < n )
+		{
+			return(n2 + 1) ;
+		}
+			return(n * n2);
+
 	}
 
 	else if (n < 0)
