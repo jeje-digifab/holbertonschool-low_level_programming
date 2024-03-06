@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * _memset - Entry point.
- * @s: pointeur vers la mémoire à remplir.
- * @b: valeur constante à remplir.
- * @n: longueur de la zone mémoire à remplir.
- * Return: function that prints a sing, followed by a new line, to stdout.
+ * _puts_recursion - Entry point.
+ * @s: pointeur la phrase à copier.
+ * Return: function that prints a string, followed by a new line.
  */
 
 void _puts_recursion(char *s)
