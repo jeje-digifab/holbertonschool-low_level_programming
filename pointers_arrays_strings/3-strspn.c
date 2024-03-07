@@ -30,12 +30,8 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		return (accept[length]);
 
+
 	}
-	/*
-	else
-	{
-		return (accept[length]);
-	}
-*/
-	return (accept[length]);
+
+	return (0);
 }
