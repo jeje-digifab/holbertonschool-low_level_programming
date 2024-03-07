@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 
 /**
  * _strchr - Entry point.
@@ -12,18 +11,22 @@
 char *_strchr(char *s, char c)
 
 {
-	int len;
+	int len, i;
 
 	len = 0;
 
 	while (s[len] != '\0')
 	{
-		if (s[len] == c)
-		{
-			return (&s[len]);
-		}
 		len++;
-
 	}
-	return (NULL);
+
+	for (i = 0; i <= len; i++, s++)
+	{
+		if (*s == c)
+		{
+			return (s);
+		}
+	}
+
+	return (0);
 }
