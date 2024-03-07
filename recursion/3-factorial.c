@@ -11,35 +11,25 @@
 int factorial(int n)
 
 {
-	int n2;
-
-	n2 = 0;
-
 	if (n > 0)
 	{
-		if (n2 < n )
 		{
-			return(n2 + 1) ;
+			if (n == 0)
+				return (1);
+			else
+				return (n * factorial(n - 1));
 		}
-			return(n * n2);
 
-	}
-
-	else if (n < 0)
-	{
-		return (-1);
 	}
 
 	else if (n == 0)
 	{
 		return (1);
 	}
-/*
+
 	else
 	{
-		return;
+		return (-1);
 	}
 
-*/
-	return (0);
 }
