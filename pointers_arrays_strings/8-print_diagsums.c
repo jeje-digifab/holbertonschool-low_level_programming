@@ -10,33 +10,24 @@
 
 void print_diagsums(int *a, int size)
 
-
 {
-	int i, sump, sums;
+	int i, j, sump, sums;
 
 	sump = 0;
 	sums = 0;
+	j = size - 1;
+	i = 0;
 
-	for (i = 0; i < size; i++)
+	for (; i <= (size * size); i = i + size + 1)
 	{
-
-/*
-		sump += *a[i][i];
-		sums += *a[i][size - i - 1];
-*/
-
 		sump += a[i];
-
-		sums += a[size - i - 1];
-
-
 	}
 
+	for (; j < (size * size - 1); j = j + size - 1)
+	{
+		sums += a[j];
+	}
 
-	printf("%d", sump);
-
-	printf("%d", sums);
-
-	putchar('\n');
-
+	printf("%d, %d\n", sump, sums);
+	
 }
