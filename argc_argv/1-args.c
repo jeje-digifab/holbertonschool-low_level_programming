@@ -15,12 +15,12 @@ int main(int argc, char *argv[])
 
 	if (argc == 1)
 	{
-		printf("%d\n", argc);
+		printf("0\n");
 	}
 
 	else
 	{
-		printf("0");
+		printf("%d\n", argc);
 	}
 
 	return (0);
