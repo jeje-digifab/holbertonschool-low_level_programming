@@ -1,21 +1,20 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
  * main - Entry point.
  * @argc: pointeur la phrase à copier.
  * @argv: pointeur la phrase à copier.
- * Return: function that prints a string, followed by a new line.
+ * Return: fprogram that prints its name.
  */
 
-void main(int argc, char *argv[])
+int main(int argc, char *argv[])
 
 {
-	int i;
 
-	for (i = 0; i < argc; i++)
+	if (argc == 1)
 	{
-		printf("%s ", argv[i]);
+		printf("%s\n", argv[0]);
 	}
-	printf("\n");
+
+	return (0);
 }
