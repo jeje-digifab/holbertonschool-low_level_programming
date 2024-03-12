@@ -21,11 +21,10 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (str[len] !='\0')
+	while (str[len] != '\0')
 	{
 		len++;
 	}
-
 
 	buffer = malloc((len + 1));
 	if (!buffer)
@@ -35,10 +34,10 @@ char *_strdup(char *str)
 
 	for (i = 0; i < len; i++)
 	{
-		buffer = str;
+		buffer[i] = str[i];
 	}
-	putchar('\0');
 
+	buffer[len] = '\0';
 
 	return (buffer);
 
