@@ -11,29 +11,26 @@
 void *malloc_checked(unsigned int b)
 
 {
+/*
+	int i;
+*/
+
 	char *buffer;
 
-	buffer = malloc(sizeof(b));
+	buffer = malloc(b);
 
 	if (!buffer)
 	{
 		exit (98);
+		free(buffer);
 	}
 
 	else
 	{
-	return (0);
+		return (buffer);
 	}
 
 
-	/*
-	int i;
-
-	for (i = 0;  < b; i++)
-	{
-		return ;
-	}
-*/
-
-
+return (0);
+free (buffer);
 }
