@@ -16,9 +16,14 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	char *buffer;
 	unsigned int i;
 
+	if (!nmemb || !size)
+	{
+		return (NULL);
+	}
+
 	buffer = malloc(nmemb * size);
 
-	if (!buffer || !nmemb || !size)
+	if (!buffer)
 	{
 		return (NULL);
 	}
