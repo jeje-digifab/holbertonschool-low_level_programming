@@ -10,7 +10,7 @@
  * @owner: Owner of the dog
  *
  * Description: This function initializes a struct dog with the given
- *              parameters and assigns them to the corresponding fields.
+ *				parameters and assigns them to the corresponding fields.
  */
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
