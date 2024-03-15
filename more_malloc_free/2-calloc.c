@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 /**
  * _calloc - Entry point.
@@ -13,6 +14,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 {
 	char *buffer;
+	unsigned int i;
 
 	buffer = malloc(nmemb * size);
 
@@ -21,12 +23,16 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	}
 
-	else if ((nmemb || size) == 0)
+	else if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
 
-	memset(buffer, 0, nmemb * size);
+	for (i = 0; i < nmemb * size; i++)
+	{
+		((char *)buffer)[i] = 0;
+	}
 
 	return (buffer);
 }
+
