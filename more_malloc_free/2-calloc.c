@@ -18,12 +18,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	buffer = malloc(nmemb * size);
 
-	if (!buffer)
-	{
-		return (NULL);
-	}
-
-	if (nmemb == 0 || size == 0)
+	if (!buffer || !nmemb || !size)
 	{
 		return (NULL);
 	}
