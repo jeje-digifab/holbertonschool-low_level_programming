@@ -2,7 +2,7 @@
 #define DOG_H_
 
 /**
- * dog - structure.
+ * struct dog - structure.
  * @name: un pointeur vers une chaîne de caractères
  *			représentant le nom du chien.
  * @age: un nombre à virgule flottante
