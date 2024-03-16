@@ -4,27 +4,26 @@
 #include <string.h>
 
 /**
- * new_dog - creates a new dog structure with the given name, age, and owner
- * @name: the name of the dog (must be duplicated)
- * @age: the age of the dog
- * @owner: the owner of the dog (must be duplicated)
+ * free_dog - Frees the memory allocated for a dog_t structure and its members.
+ * @d: Pointer to the dog_t structure to be freed.
  *
- * Return: a pointer to the new dog structure, or NULL if the function fails
- *
- * This function creates a new dog structure and initializes its name, age,
- * and owner fields with the given values. The name and owner strings are
- * duplicated using malloc and strcpy, so the caller does not need to keep
- * the original strings around. If any memory allocation fails, the function
- * frees any previously allocated memory and returns NULL.
+ * Description: This function frees the memory allocated for a dog_t structure
+ *              and its members, including the name and owner strings. It first
+ *              checks if the pointer is not NULL, then frees the memory for
+ *              each member and the structure itself using the free() function.
+ *              Finally, it sets the pointer to NULL to indicate that it no
+ *              longer points to a valid instance of dog_t. This helps to
+ *              prevent use-after-free errors and other undefined behavior.
  */
 
 void free_dog(dog_t *d)
 {
 
-	if (!d)
+	if (d != NULL)
 	{
-		free_dog(d);
-	}
-
+	free(d->name);
+	free(d->owner);
 	free(d);
+	d = NULL;
+	}
 }
