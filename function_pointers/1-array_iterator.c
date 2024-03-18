@@ -3,7 +3,7 @@
 
 /**
  * array_iterator - executes a function given as a parameter on
-  *					each element of an array
+ *					each element of an array
  * @array: pointer to the first element of the array
  * @size: number of elements in the array
  * @action: pointer to the function to be executed on each element
