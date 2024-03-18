@@ -1,6 +1,8 @@
 #ifndef FONCTION_POINTERS_H_
 #define FONCTION_POINTERS_H_
 
+#include <stddef.h>
+
 /**
  * struct dog - structure.
  * @name: un pointeur vers une chaîne de caractères
