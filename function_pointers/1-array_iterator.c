@@ -2,15 +2,15 @@
 #include <stddef.h>
 
 /**
- * print_name - prints a name using a given function pointer
- * @name: the name to be printed
- * @f: a pointer to a function that takes a string argument and returns void
+ * array_iterator - executes a function given as a parameter on
+  *					each element of an array
+ * @array: pointer to the first element of the array
+ * @size: number of elements in the array
+ * @action: pointer to the function to be executed on each element
  *
- * Description: This function takes a name and a function pointer as arguments,
- *              and calls the function pointed to by `f` with `name` as its
- *              argument. This allows the name to be printed in different ways
- *              depending on the function pointed to by `f`. If `f` is NULL,
- *              the function does nothing.
+ * Description: This function iterates over each element of the array and
+ *              executes the function pointed to by `action` on that element.
+ *              If `array` or `action` is NULL, the function does nothing.
  *
  * Return: Nothing.
  */
