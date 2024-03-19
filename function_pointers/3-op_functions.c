@@ -1,9 +1,7 @@
 #include "calc.h"
 #include <stdio.h>
-#include <stddef.h>
-#include <stdlib.h>
 
-int a, b, result;
+int a, b;
 
 
 /**
@@ -62,7 +60,7 @@ int op_div(int a, int b)
 	if (b == 0)
 	{
 		printf("Cannot divid by 0");
-		return (NULL);
+		return (100);
 	}
 	return a / b;
 }
