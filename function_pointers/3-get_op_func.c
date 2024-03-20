@@ -40,5 +40,5 @@ while (ops[i].op != NULL && strcmp(ops[i].op, s) != 0)
 	}
 	i++;
 }
-return (NULL);
+return (ops[i].f);
 }
