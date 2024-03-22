@@ -1,6 +1,5 @@
 #include "variadic_functions.h"
-#include <stdarg.h>
-#include <stdio.h>
+
 
 /**
  * print_strings - prints a list of strings separated by a given separator
@@ -38,7 +37,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (argument ==  NULL)
 		{
-			printf("(nil)\n");
+			printf("(nil)");
 		}
 
 		else
